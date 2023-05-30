@@ -1,6 +1,6 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+//error_reporting(E_ALL);
+//ini_set('display_errors', 1);
 
 session_start();
 
@@ -15,7 +15,7 @@ require 'vendor/autoload.php';
 use Aws\Credentials\Credentials;
 use Aws\DynamoDb\DynamoDbClient;
 
-$credentials = new Credentials('AKIA6OLYM76FA2V75JJ2', 'bS+yFzEzugKgddMvYRByc8fRlMTph+9VSkm99d5T');
+$credentials = new Credentials('', '');
 $dynamodb = new DynamoDbClient([
     'region' => 'us-east-1',
     'version' => '2012-08-10',

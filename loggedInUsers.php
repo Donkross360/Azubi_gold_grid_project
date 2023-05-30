@@ -7,8 +7,8 @@ $client = new DynamoDbClient([
     'region' => 'us-east-1',
     'version' => 'latest',
     'credentials' => [
-        'key' => 'YOUR_AWS_ACCESS_KEY',
-        'secret' => 'YOUR_AWS_SECRET_ACCESS_KEY',
+        'key' => '',
+        'secret' => '',
     ],
 ]);
 

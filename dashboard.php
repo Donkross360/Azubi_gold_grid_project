@@ -1,8 +1,8 @@
 <?php
 
 ini_set('display_errors', 0);
-error_reporting(E_ALL);
-session_start();
+//error_reporting(E_ALL);
+//session_start();
 
 
 
@@ -40,8 +40,8 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 require 'vendor/autoload.php';
 
 use Aws\DynamoDb\DynamoDbClient;
-$access_key = 'AKIA6OLYM76FA2V75JJ2';
-$secret_key = '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';
+$access_key = '';
+$secret_key = '';
 
 // Configure AWS SDK
 $client = new DynamoDbClient([

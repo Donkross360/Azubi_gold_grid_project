@@ -7,13 +7,13 @@ use Aws\DynamoDb\Exception\DynamoDbException;
 use Aws\DynamoDb\DynamoDbClient;
 use Aws\Credentials\Credentials;
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+//error_reporting(E_ALL);
+//ini_set('display_errors', 1);
 
 session_start();
 
 // Set up the DynamoDB client with your AWS credentials and configuration
-$credentials = new Credentials('AKIA6OLYM76FA2V75JJ2', 'bS+yFzEzugKgddMvYRByc8fRlMTph+9VSkm99d5T');
+$credentials = new Credentials('', '');
 
 $client = new DynamoDbClient([
     'region' => 'us-east-1',
